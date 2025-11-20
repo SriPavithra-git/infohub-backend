@@ -1,5 +1,4 @@
 package com.infohub.config;
- // <-- CHANGE THIS to match your actual package
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,8 +16,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "https://infohub-frontend.vercel.app",
-                                "https://infohub-backend-oh9l.onrender.com"
+                                "https://infohub-frontend-omega.vercel.app"  // Your live frontend
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
