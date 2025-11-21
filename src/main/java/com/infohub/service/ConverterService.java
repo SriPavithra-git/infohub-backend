@@ -21,7 +21,8 @@ public class ConverterService {
 
             return Map.of(
                     "USD", rates.get("USD"),
-                    "EUR", rates.get("EUR")
+                    "EUR", rates.get("EUR"),
+                    "JPY", rates.get("JPY")
             );
 
         } catch (Exception e) {
